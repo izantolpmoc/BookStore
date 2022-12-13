@@ -3,7 +3,7 @@ package Bean;
 public class Book {
     private int id;
     private double price;
-    private String title, author, description;
+    private String title, author, description, photo;
 
     public int getId() {
         return id;
@@ -46,4 +46,11 @@ public class Book {
         this.description = description;
     }
 
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
 }

@@ -13,6 +13,9 @@ import java.util.List;
 public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        BooksRepository data = new BooksRepository();
+        List<Book> books = data.getLatestBooks();
+        request.setAttribute("books", books);
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 

@@ -21,6 +21,10 @@ public class CatalogServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        BooksRepository data = new BooksRepository();
+        List<Book> books = data.searchBooks(request.getParameter("key"));
+        request.setAttribute("books", books);
+        request.setAttribute("key", request.getParameter("key"));
+        request.getRequestDispatcher("views/catalog.jsp").forward(request, response);
     }
 }
