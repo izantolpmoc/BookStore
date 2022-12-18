@@ -6,11 +6,11 @@
     <h1>Catalog</h1>
 
 
-<div class="container d-md-flex" style="gap: 20px">
+<div class="container d-md-flex" style="gap: 20px;">
     <jsp:useBean id="books" scope="request" type="java.util.ArrayList"/>
     <c:forEach items="${books}" var="book">
     <a class="card-link-container" href="details?id=${book.id}">
-        <div class="card mr-4 mt-4 flex-wrap" style="flex: 1;">
+        <div class="card mx-auto mt-4 flex-wrap" style="flex: 1; max-width: 300px;">
             <img src="${book.photo}" class="card-img-top" alt="${book.title}">
             <div class="card-body">
                 <h5 class="card-title"><c:out value="${book.title}"/></h5>

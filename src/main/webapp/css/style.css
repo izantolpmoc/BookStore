@@ -43,3 +43,43 @@ h1 {
     width: 100%;
     max-width: 400px;
 }
+
+.basket h3 {
+    font-weight: 600;
+}
+
+.basket h3 span {
+    font-weight: 400;
+}
+
+.basket h5 {
+    color: gray;
+}
+
+.footer-16371 {
+    padding: 7rem 0;
+    font-family: "Poppins", sans-serif;
+}
+.footer-16371 .footer-site-logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900; }
+.footer-16371 .footer-site-logo a {
+    font-family: 'Calistoga', cursive;
+    color: black; }
+.footer-16371 .nav-links {
+    padding: 0;
+    margin: 0; }
+.footer-16371 .nav-links li {
+    display: inline-block; }
+.footer-16371 .nav-links li a {
+    padding: 10px;
+    color: #000; }
+.footer-16371 .nav-links li a:hover {
+    color: #4200ff; }
+.footer-16371 .social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; }
+.footer-16371 .copyright {
+    color: #999999; }

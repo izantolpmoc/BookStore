@@ -20,7 +20,7 @@
                                                 <c:when test="${ books.get(0) == book }"><div class="carousel-item active"></c:when>
                                                 <c:otherwise><div class="carousel-item"></c:otherwise>
                                         </c:choose>
-                                                <img src="${book.photo}" class="d-block w-100" alt="${book.title}">
+                                                <a href="details?id=${book.id}"><img src="${book.photo}" class="d-block w-100" alt="${book.title}"></a>
                                                 <div class="carousel-caption d-none d-md-block">
                                                         <h5>${book.title}</h5>
                                                         <p>${book.description}</p>
@@ -39,6 +39,5 @@
                         </button>
                 </div>
         </div>
-        <a href="catalog">All books</a>
 
 <jsp:include page="views/_footer.jsp"></jsp:include>
